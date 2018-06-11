@@ -74,7 +74,9 @@ git push heroku master
 .just FYI
 [source,bash]
 ----
+heroku git:remote -a daggerok-gradle-buildpack
 git remote -v
+# skip others...
 heroku  https://git.heroku.com/daggerok-gradle-buildpack.git (fetch)
 heroku  https://git.heroku.com/daggerok-gradle-buildpack.git (push)
 ----
