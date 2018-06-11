@@ -1,4 +1,4 @@
-= heroku-gradle-buildpack-example image:https://travis-ci.org/daggerok/heroku-java-buildpack-example.svg?branch=master["Build Status", link="https://travis-ci.org/daggerok/heroku-java-buildpack-example"] image:https://gitlab.com/daggerok/heroku-java-buildpack-example/badges/master/build.svg["Build Status", link="https://gitlab.com/daggerok/heroku-java-buildpack-example/-/jobs"]
+= heroku-gradle-buildpack-example image:https://travis-ci.org/daggerok/heroku-gradle-buildpack-example.svg?branch=master["Build Status", link="https://travis-ci.org/daggerok/heroku-gradle-buildpack-example"] image:https://gitlab.com/daggerok/heroku-gradle-buildpack-example/badges/master/build.svg["Build Status", link="https://gitlab.com/daggerok/heroku-gradle-buildpack-example/-/jobs"]
 
 //tag::content[]
 == migrate from maven to gradle (heroku only)
