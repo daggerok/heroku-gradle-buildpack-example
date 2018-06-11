@@ -26,14 +26,6 @@ script:
 - http :8080/api/
 - http :8080/api/em/entity
 - stop_any 80 8080 80 8080
-#
-- bash mvnw >/dev/null
-- java  -Dspring.profiles.active=dev -jar ./target/*.jar &
-- wait_for 8080
-- http :8080
-- http :8080/api/
-- http :8080/api/em/entity
-- stop_any 80 80 8080 8080
 
 cache:
   directories:

@@ -14,15 +14,7 @@ cache:
   - ${HOME}/.gradle
 
 ci-job:
-
   before_script:
-  - pwd
-  - whoami
-  - ls -lah .
-  - uname -a
-  - which bash
-  - which apt-get
-  - which apt || true
   - apt-get update -y >/dev/null || true
   - apt-get install -y --no-install-recommends curl jq bash sudo lsof >/dev/hull
   - source <(curl -s https://raw.githubusercontent.com/daggerok/bash-functions/master/main.bash)
@@ -35,13 +27,13 @@ ci-job:
   - curl -s 127.0.0.1:8080
   - curl -s 127.0.0.1:8080/api/em/entity | jq .
   - stop_any 80 8080
-  #
-  - ./mvnw >/dev/null
 
 pages:
+
   script:
   - mkdir -p public
   - ./gradlew documentation
+
   artifacts:
     paths:
     - public
